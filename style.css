@@ -1,0 +1,54 @@
+.article {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: bisque;
+    margin: 20px 0px;
+}
+
+.content {
+    margin-left: 20%;
+    text-align: justify;
+}
+
+.date {
+    text-align: end;
+}
+
+.authorPicture {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .authorPicture {
+        display: block;
+    }
+
+    .firstPart {
+        display: flex;
+        align-items: start;
+    }
+
+    .textContent {
+        margin-left: 10px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .date {
+        text-align: start;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .article {
+        width: 45%;
+    }
+    
+}
